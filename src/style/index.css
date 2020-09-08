@@ -16,3 +16,9 @@ hr {
   border-top: 1px solid #eee;
   margin: 35px 0;
 }
+
+.global-class-name {
+  font-size: 100px;
+  text-align: center;
+  color: blue;
+}
