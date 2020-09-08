@@ -1,6 +1,6 @@
 .layout {
   width: 100vw;
-  height: 100vh;
+  /* height: 100vh; */
   font-size: 20px;
   overflow: auto;
   position: relative;
@@ -12,10 +12,43 @@
   margin: auto;
   /* overflow: auto; */
 }
+.wrapper {
+  min-height: calc(100% - 96px);
+}
 
-.container .wrapper {
+/* .container .wrapper {
   position: relative;
   overflow: hidden;
   width: 100%;
   height: 100vh;
+} */
+
+/* Header */
+.topnav {
+  height: 48px;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #4caf50;
+  color: white;
+}
+
+.topnav-right {
+  float: right;
 }
