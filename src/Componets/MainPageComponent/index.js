@@ -1,6 +1,6 @@
 import React from "react";
 
-import ProductItem from "../../shared/ProductItem";
+import ProductItem from "shared/ProductItem";
 
 const MainPageComponent = () => {
   return (
