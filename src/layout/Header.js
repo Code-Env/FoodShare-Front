@@ -28,7 +28,9 @@ const Header = () => {
         </div>
       </div>
       {/* <span style={{ fontSize: "30px", cursor: "pointer" }} onClick={openNav()}> */}
-      <span style={{ fontSize: "30px", cursor: "pointer" }}>&#9776;</span>
+      <span style={{ marginLeft: "16px", fontSize: "30px", cursor: "pointer" }}>
+        &#9776;
+      </span>
       <div className="topnav-right">
         <a href="#search">Search</a>
         <a href="#about">About</a>
