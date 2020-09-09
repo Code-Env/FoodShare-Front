@@ -1,10 +1,10 @@
 .productInfoContainer .slide {
-  width: 425px;
+  width: 100%;
   height: 195px;
   background-color: #7f7f7f;
 }
 .productInfoContainer .userInfo {
-  width: 425px;
+  width: 100%;
   padding: 10px 10px;
   box-sizing: border-box;
   background-color: #ffffff;
@@ -39,4 +39,81 @@
 }
 .productInfoContainer .userInfo .mannerCount span:first-child {
   margin-right: 5px;
+}
+.productInfoContainer .contentBox {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20px 20px;
+}
+/*.productInfoContainer .contentBox .contentBox .contentBoxTitle {
+  게시글 제목
+}
+*/
+.productInfoContainer .contentBox .contentBoxCondition {
+  font-size: 13px;
+  color: #7f7f7f;
+  display: flex;
+  justify-content: space-between;
+}
+.productInfoContainer .contentBox .contentBoxFavourite span:first-child {
+  padding-right: 5px;
+}
+.productInfoContainer .contentBox .contentBoxHit span:first-child {
+  padding-right: 5px;
+}
+.productInfoContainer .tradeContent {
+  font-size: 15px;
+  color: #333333;
+  padding: 10px 20px;
+}
+.productInfoContainer .buttonGroup {
+  width: 100%;
+  padding: 20px 20px 40px 20px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+}
+.productInfoContainer .siren .sirenIcon {
+  color: #c0392b;
+  font-size: 50px;
+}
+.productInfoContainer .favouriteIco .haertIcon {
+  color: #ffffff;
+  font-size: 30px;
+  margin-bottom: -5px;
+}
+.productInfoContainer .buttonGroup .buttonClick {
+  display: flex;
+}
+.productInfoContainer .buttonGroup .buttonClick .siren {
+  margin-right: 20px;
+}
+.productInfoContainer .buttonGroup .chatingButton {
+  line-height: 55px;
+}
+.productInfoContainer .buttonGroup .chatingButton button {
+  background-color: #4caf50;
+  border: none;
+  padding: 0px;
+  color: #ffffff;
+  width: 140px;
+  text-align: center;
+  height: 55px;
+  font-size: 16px;
+  border-radius: 5%;
+  -webkit-border-radius: 5%;
+  -moz-border-radius: 5%;
+  -ms-border-radius: 5%;
+  -o-border-radius: 5%;
+}
+.productInfoContainer .buttonGroup .buttonClick .buttonGroupFavourite {
+  text-align: center;
+}
+.productInfoContainer
+  .buttonGroup
+  .buttonClick
+  .buttonGroupFavourite
+  .favouriteCnt {
+  font-size: 14px;
+  text-align: center;
 }
