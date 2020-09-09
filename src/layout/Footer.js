@@ -1,22 +1,9 @@
 import React from "react";
 
-const Header = () => {
-  // const openNav = () => {
-  //   document.getElementById("myNav").style.width = "100%";
-  // };
-  // const closeNav = () => {
-  //   window.onload = function (event) {
-  //     document.getElementById("myNav").style.width = "0%";
-  //   };
-  // };
-
+const Footer = () => {
   return (
     <div className="topnav">
-      {/* <a className="active" href="#home">
-        Home
-      </a> */}
       <div id="myNav" class="overlay">
-        {/* <a href="/" className="closebtn" onClick={closeNav()}> */}
         <a href="/" className="closebtn">
           &times;
         </a>
@@ -27,7 +14,6 @@ const Header = () => {
           <a href="#Contact">Contact</a>
         </div>
       </div>
-      {/* <span style={{ fontSize: "30px", cursor: "pointer" }} onClick={openNav()}> */}
       <span style={{ marginLeft: "16px", fontSize: "30px", cursor: "pointer" }}>
         &#9776;
       </span>
@@ -39,4 +25,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default Footer;
