@@ -25,10 +25,18 @@
 } */
 
 /* Header */
-.topnav {
+.topnav,
+.bottomnav {
   height: 48px;
   overflow: hidden;
   background-color: #4caf50;
+}
+.bottomnav {
+  display: flex;
+  justify-content: space-between;
+}
+.bottomnav div {
+  padding: 14px 16px;
 }
 
 .topnav a {
@@ -52,6 +60,15 @@
 
 .topnav-right {
   float: right;
+}
+
+.topnav-right div {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
 }
 /**/
 .overlay {
