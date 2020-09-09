@@ -1,5 +1,8 @@
 import React from "react";
 
+import { IconContext } from "react-icons";
+import { FaSearch, FaBell } from "react-icons/fa";
+
 const Header = () => {
   // const openNav = () => {
   //   document.getElementById("myNav").style.width = "100%";
@@ -12,9 +15,6 @@ const Header = () => {
 
   return (
     <div className="topnav">
-      {/* <a className="active" href="#home">
-        Home
-      </a> */}
       <div id="myNav" class="overlay">
         {/* <a href="/" className="closebtn" onClick={closeNav()}> */}
         <a href="/" className="closebtn">
@@ -32,8 +32,16 @@ const Header = () => {
         &#9776;
       </span>
       <div className="topnav-right">
-        <a href="#search">Search</a>
-        <a href="#about">About</a>
+        <div>
+          <IconContext.Provider value={{ className: "search_ico" }}>
+            <FaSearch />
+          </IconContext.Provider>
+        </div>
+        <div>
+          <IconContext.Provider value={{ className: "bell_ico" }}>
+            <FaBell />
+          </IconContext.Provider>
+        </div>
       </div>
     </div>
   );
