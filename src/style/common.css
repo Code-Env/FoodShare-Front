@@ -1,0 +1,86 @@
+.userInfo {
+  width: 100%;
+  padding: 10px 10px;
+  box-sizing: border-box;
+  background-color: #ffffff;
+}
+.userInfo .userImg {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  background-color: #ccc;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+.userInfoContainer {
+  width: calc(100% - 166px);
+  display: inline-block;
+  vertical-align: middle;
+}
+.userInfo.chat {
+  background-color: inherit;
+}
+.userInfo.chat .userInfoContainer {
+  width: calc(100% - 120px);
+}
+.userInfo.chat .position,
+.userInfo.chat .mannerCount {
+  display: none;
+}
+.userInfo .chat_position,
+.userInfo .time {
+  display: none;
+  font-size: 13px;
+  margin-right: 7px;
+}
+.userInfo .last_chat {
+  display: none;
+  font-size: 14px;
+  margin-top: 5px;
+}
+.userInfo.chat .userName {
+  font-size: 17px;
+  display: inline-block;
+  margin-right: 7px;
+}
+.userInfo.chat .chat_position,
+.userInfo.chat .time {
+  display: inline-block;
+}
+.userInfo.chat .pruduct_img {
+  display: inline-block;
+  border-radius: 7px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+}
+.userInfo.chat .last_chat {
+  display: block;
+}
+.userInfo .mannerCount {
+  width: 101px;
+  text-align: right;
+  display: inline-block;
+  vertical-align: middle;
+}
+.userInfo .mannerCount span {
+  display: inline-block;
+  vertical-align: middle;
+}
+.userInfo .mannerCount span:first-child {
+  margin-right: 5px;
+}
+.userInfo .pruduct_img {
+  display: none;
+  width: 55px;
+  height: 55px;
+  background-color: #ccc;
+  /* display: inline-block; */
+  vertical-align: middle;
+}
