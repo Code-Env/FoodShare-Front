@@ -3,6 +3,7 @@
 @import "./layout.css";
 @import "./shared.css";
 @import "./productInfo.css";
+@import "./chatt.css";
 
 body {
   margin: 0;

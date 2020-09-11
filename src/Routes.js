@@ -4,6 +4,7 @@ import { Route, Switch } from "react-router-dom";
 
 import Main from "pages/Main";
 import ProductInfo from "pages/ProductInfo";
+import ChattingList from "pages/ChattingList";
 
 const Routes = () => {
   return (
@@ -13,6 +14,7 @@ const Routes = () => {
       <Switch>
         <Route exact path="/" component={Main} />
         <Route path="/product" component={ProductInfo} />
+        <Route path="/chattinglist" component={ChattingList} />
       </Switch>
       {/* </HashRouter> */}
     </>
