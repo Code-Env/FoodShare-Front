@@ -46,7 +46,7 @@ const ProductInfoComponent = () => {
               </IconContext.Provider>
             </div>
             <span id="favouriteCnt" className="favouriteCnt">
-              0
+              100
             </span>
           </div>
         </div>
