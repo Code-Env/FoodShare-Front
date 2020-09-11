@@ -2,22 +2,13 @@ import React from "react";
 import { IconContext } from "react-icons";
 import { GiSiren } from "react-icons/gi";
 import { BsHeartFill } from "react-icons/bs";
+import UserInfo from "../../shared/UserInfo";
 
 const ProductInfoComponent = () => {
   return (
     <div className="productInfoContainer">
       <div className="slide">SliderImg</div>
-      <div className="userInfo">
-        <div className="uerImg"></div>
-        <div className="userInfoContainer">
-          <div className="userName">닉네임</div>
-          <div className="position">서울</div>
-        </div>
-        <div className="mannerCount">
-          <span>매너</span>
-          <span>-100%</span>
-        </div>
-      </div>
+      <UserInfo />
       <div className="contentBox">
         <div className="contentBoxTitle">거래하실분 괌 ...</div>
         <div className="contentBoxCondition">
