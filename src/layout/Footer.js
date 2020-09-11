@@ -9,6 +9,7 @@ const Footer = () => {
     <div className="bottomnav">
       <div>menu</div>
       <div>menu</div>
+      <div>menu</div>
       <div>
         <Link to="/">
           <IconContext.Provider value={{ className: "home_ico" }}>
