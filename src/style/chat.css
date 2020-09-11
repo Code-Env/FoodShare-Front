@@ -1,0 +1,17 @@
+.chattingTitleOption {
+  border-bottom: solid 1px #999;
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  background: #f1f1f1;
+}
+.chatList_container {
+  padding-top: 40px;
+}
+.chattingTitle {
+  text-align: center;
+  font-weight: bold;
+}
+.chattingRoom {
+  border-bottom: solid 1px #999;
+}
