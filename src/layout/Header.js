@@ -15,7 +15,7 @@ const Header = () => {
 
   return (
     <div className="topnav">
-      <div id="myNav" class="overlay">
+      <div id="myNav" className="overlay">
         {/* <a href="/" className="closebtn" onClick={closeNav()}> */}
         <a href="/" className="closebtn">
           &times;
@@ -28,7 +28,14 @@ const Header = () => {
         </div>
       </div>
       {/* <span style={{ fontSize: "30px", cursor: "pointer" }} onClick={openNav()}> */}
-      <span style={{ marginLeft: "16px", fontSize: "30px", cursor: "pointer" }}>
+      <span
+        style={{
+          marginLeft: "16px",
+          fontSize: "30px",
+          cursor: "pointer",
+          color: "#fff",
+        }}
+      >
         &#9776;
       </span>
       <div className="topnav-right">
