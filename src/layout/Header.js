@@ -1,6 +1,7 @@
 import React from "react";
 
 import { IconContext } from "react-icons";
+import { GoSettings } from "react-icons/go";
 import { FaSearch, FaBell } from "react-icons/fa";
 
 const Header = () => {
@@ -39,6 +40,11 @@ const Header = () => {
         &#9776;
       </span>
       <div className="topnav-right">
+        <div className="menu_btn">
+          <IconContext.Provider value={{ className: "set_ico" }}>
+            <GoSettings />
+          </IconContext.Provider>
+        </div>
         <div>
           <IconContext.Provider value={{ className: "search_ico" }}>
             <FaSearch />
