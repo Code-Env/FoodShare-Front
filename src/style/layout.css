@@ -35,9 +35,9 @@
   display: flex;
   justify-content: space-between;
 }
-/* .bottomnav .menu_btn {
+.bottomnav .menu_btn {
   padding: 14px 16px;
-} */
+}
 .bottomnav .menu_btn div {
   display: inline-block;
 }

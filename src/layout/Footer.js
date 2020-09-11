@@ -43,7 +43,7 @@ const Footer = () => {
       </div>
 
       <div className="menu_btn">
-        <Link to="/">
+        <Link to="/chattinglist">
           <IconContext.Provider value={{ className: "create_ico" }}>
             <AiOutlineComment />
           </IconContext.Provider>
