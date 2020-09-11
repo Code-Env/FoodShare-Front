@@ -13,21 +13,19 @@
   /* overflow: auto; */
 }
 .wrapper {
-  height: calc(100vh - 96px);
+  /* height: calc(100vh - 96px); */
+  height: calc(100vh - 108px);
   overflow: auto;
 }
 
-/* .container .wrapper {
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-  height: 100vh;
-} */
-
 /* Header */
-.topnav,
-.bottomnav {
+.topnav {
   height: 48px;
+  overflow: hidden;
+  background-color: #4caf50;
+}
+.bottomnav {
+  height: 60px;
   overflow: hidden;
   background-color: #4caf50;
 }
@@ -36,7 +34,9 @@
   justify-content: space-between;
 }
 .bottomnav .menu_btn {
-  padding: 14px 16px;
+  padding: 15px 20px;
+  color: white;
+  font-size: 30px;
 }
 .bottomnav .menu_btn div {
   display: inline-block;
@@ -71,7 +71,7 @@
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 23px;
 }
 /**/
 .overlay {

@@ -3,7 +3,6 @@ import React, { Component } from "react";
 import { Link, withRouter } from "react-router-dom";
 import { IconContext } from "react-icons";
 import { IoIosArrowBack, IoIosArrowForward, IoMdHome } from "react-icons/io";
-import { GoSettings } from "react-icons/go";
 import { BsPencilSquare } from "react-icons/bs";
 import { AiOutlineComment } from "react-icons/ai";
 
@@ -14,24 +13,18 @@ class Footer extends Component {
   goBack = () => {
     this.props.history.goBack();
   };
+
   render() {
     return (
       <div className="bottomnav">
-        <div className="menu_btn">
-          <div onClick={this.goBack}>
-            <IconContext.Provider value={{ className: "back_ico" }}>
-              <IoIosArrowBack />
-            </IconContext.Provider>
-          </div>
-          <div onClick={this.go}>
-            <IconContext.Provider value={{ className: "back_ico" }}>
-              <IoIosArrowForward />
-            </IconContext.Provider>
-          </div>
+        <div className="menu_btn" onClick={this.goBack}>
+          <IconContext.Provider value={{ className: "back_ico" }}>
+            <IoIosArrowBack />
+          </IconContext.Provider>
         </div>
-        <div className="menu_btn">
-          <IconContext.Provider value={{ className: "set_ico" }}>
-            <GoSettings />
+        <div className="menu_btn" onClick={this.go}>
+          <IconContext.Provider value={{ className: "back_ico" }}>
+            <IoIosArrowForward />
           </IconContext.Provider>
         </div>
         <div className="menu_btn">
