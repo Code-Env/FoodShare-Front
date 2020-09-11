@@ -8,6 +8,11 @@ const MainPageComponent = () => {
     <div className="mainpage_wrapper">
       <Link to="/product">
         <ProductItem />
+        <ProductItem />
+        <ProductItem />
+        <ProductItem />
+        <ProductItem />
+        <ProductItem />
       </Link>
     </div>
   );

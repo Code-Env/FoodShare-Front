@@ -17,6 +17,9 @@
   height: calc(100vh - 108px);
   overflow: auto;
 }
+.headerNoneStyle .wrapper {
+  height: calc(100vh - 60px);
+}
 
 /* Header */
 .topnav {

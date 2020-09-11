@@ -6,7 +6,7 @@ import ChattingListContainer from "containers/ChattingListContainer";
 const ChattingList = props => {
   const { history, location } = props;
   return (
-    <Layout history={history} location={location}>
+    <Layout history={history} location={location} headerNone headerNoneStyle>
       <ChattingListContainer />
     </Layout>
   );
