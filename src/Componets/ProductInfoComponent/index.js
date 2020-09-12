@@ -2,7 +2,7 @@ import React from "react";
 import { IconContext } from "react-icons";
 import { GiSiren } from "react-icons/gi";
 import { BsHeartFill } from "react-icons/bs";
-import UserInfo from "../../shared/UserInfo";
+import UserInfo from "shared/UserInfo";
 
 const ProductInfoComponent = () => {
   return (
