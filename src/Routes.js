@@ -5,6 +5,7 @@ import { Route, Switch } from "react-router-dom";
 import Main from "pages/Main";
 import ProductInfo from "pages/ProductInfo";
 import ChattingList from "pages/ChattingList";
+import Login from "pages/Login";
 
 const Routes = () => {
   return (
@@ -15,6 +16,7 @@ const Routes = () => {
         <Route exact path="/" component={Main} />
         <Route path="/product" component={ProductInfo} />
         <Route path="/chattinglist" component={ChattingList} />
+        <Route path="/login" component={Login} />
       </Switch>
       {/* </HashRouter> */}
     </>
