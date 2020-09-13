@@ -5,6 +5,7 @@
 @import "./shared.css";
 @import "./productInfo.css";
 @import "./chat.css";
+@import "./login.css";
 
 body {
   margin: 0;
