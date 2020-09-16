@@ -18,15 +18,17 @@ const Login = () => {
         </div>
         <div className="loginCheckBox">
           <div className="holdId">
-            <input type="checkbox" className="checkId_input"></input>
-            <label htmlFor="checkId" className="checkId_label">
+            <label className="checkLogin_label">
               아이디 저장
+              <input type="checkbox" />
+              <span className="checkmark"></span>
             </label>
           </div>
           <div className="holdLogin">
-            <input type="checkbox" className="checkLogin_input"></input>
-            <label htmlFor="checkLogin" className="checkLogin_label">
+            <label className="checkLogin_label">
               로그인 상태 유지
+              <input type="checkbox" />
+              <span className="checkmark"></span>
             </label>
           </div>
         </div>
