@@ -51,8 +51,18 @@
   color: #c0392b;
   font-size: 50px;
 }
-.productInfoContainer .favouriteIco .haertIcon {
+.productInfoContainer .favouriteIco {
+  background-color: inherit;
+  border: none;
+  display: block;
+}
+.productInfoContainer .favouriteIco .haertNoneIcon {
   color: #ffffff;
+  font-size: 30px;
+  margin-bottom: -5px;
+}
+.productInfoContainer .favouriteIco .haertIcon {
+  color: red;
   font-size: 30px;
   margin-bottom: -5px;
 }
