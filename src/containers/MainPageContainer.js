@@ -10,7 +10,6 @@ const MainPageContainer = () => {
   const [productList, setProductList] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState(false);
-  // const [error, setError] = useState(false);
   useEffect(() => {
     const productList = async () => {
       try {
@@ -36,7 +35,13 @@ const MainPageContainer = () => {
     <MainPageComponent>
       <Link to="/product">
         {productList.map(product => (
-          <ProductItem key={product._id} productName={product.productName} />
+          <ProductItem
+            key={product._id}
+            productName={product.productName}
+            favouriteCount={product.favouriteCount}
+            position={product.position}
+            productImg={product.productImg}
+          />
         ))}
       </Link>
     </MainPageComponent>

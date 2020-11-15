@@ -1,16 +1,15 @@
 import React from "react";
 import { IconContext } from "react-icons";
 import { FaHeart } from "react-icons/fa";
-import background from "../assets/background.png";
 
-const ProductItem = ({ productName }) => {
+const ProductItem = ({ productName, favouriteCount, position, productImg }) => {
   return (
     <table className="Productitem">
       <thead></thead>
       <tbody>
         <tr>
           <td rowSpan="5">
-            <img src={background} alt="background" className="backgroundimg" />
+            <img src={productImg} alt="background" className="backgroundimg" />
           </td>
         </tr>
         <tr>
@@ -20,7 +19,7 @@ const ProductItem = ({ productName }) => {
         </tr>
         <tr></tr>
         <tr>
-          <td className="location">거래위치</td>
+          <td className="location">{position}</td>
           <td className="upload">9시간 전</td>
         </tr>
         <tr>
@@ -29,7 +28,7 @@ const ProductItem = ({ productName }) => {
             <IconContext.Provider value={{ className: "heart" }}>
               <div>
                 <FaHeart />
-                <span className="like"> 50</span>
+                <span className="like">{favouriteCount}</span>
               </div>
             </IconContext.Provider>
           </td>
