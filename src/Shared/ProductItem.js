@@ -3,7 +3,7 @@ import { IconContext } from "react-icons";
 import { FaHeart } from "react-icons/fa";
 import background from "../assets/background.png";
 
-const ProductItem = () => {
+const ProductItem = ({ productName }) => {
   return (
     <table className="Productitem">
       <thead></thead>
@@ -15,7 +15,7 @@ const ProductItem = () => {
         </tr>
         <tr>
           <td colSpan="2" rowSpan="2" className="itemname">
-            상품제목 글자는 최대 2줄
+            {productName}
           </td>
         </tr>
         <tr></tr>
