@@ -5,15 +5,7 @@ import { BsHeartFill } from "react-icons/bs";
 import UserInfo from "shared/UserInfo";
 import Slider from "react-slick";
 
-class asd extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = { count: 0 };
-    this.increaseCount = this.increaseCount.bind(this);
-  }
-  increaseCount() {
-    this.setState(count => ({ count: count + 1 }));
-  }
+class ProductInfoComponent extends React.Component {
   render() {
     const settings = {
       dots: true,
@@ -42,7 +34,7 @@ class asd extends React.Component {
             <div className="contentBoxAgoTime">1분전</div>
             <div className="contentBoxFavourite">
               <span>관심</span>
-              <span>{this.state.count}</span>
+              <span>100</span>
             </div>
             <div className="contentBoxHit">
               <span>조회</span>
@@ -72,7 +64,7 @@ class asd extends React.Component {
                 </IconContext.Provider>
               </div>
               <span id="favouriteCnt" className="favouriteCnt">
-                {this.state.count}
+                100
               </span>
             </div>
           </div>
@@ -85,4 +77,4 @@ class asd extends React.Component {
   }
 }
 
-export default asd;
+export default ProductInfoComponent;

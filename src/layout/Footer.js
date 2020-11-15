@@ -4,7 +4,7 @@ import { Link, withRouter } from "react-router-dom";
 import { IconContext } from "react-icons";
 import { IoIosArrowBack, IoIosArrowForward, IoMdHome } from "react-icons/io";
 import { BsPencilSquare } from "react-icons/bs";
-import { AiOutlineComment } from "react-icons/ai";
+import { FaRegComments } from "react-icons/fa";
 
 class Footer extends Component {
   go = () => {
@@ -45,7 +45,7 @@ class Footer extends Component {
         <div className="menu_btn">
           <Link to="/chattinglist">
             <IconContext.Provider value={{ className: "create_ico" }}>
-              <AiOutlineComment />
+              <FaRegComments />
             </IconContext.Provider>
           </Link>
         </div>
