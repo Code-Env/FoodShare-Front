@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
-import axios from "axios";
 import { Link } from "react-router-dom";
 import { productListApi } from "shared/Api";
+import axios from "axios";
 
 import ProductItem from "shared/ProductItem";
 import MainPageComponent from "Componets/MainPageComponent";
