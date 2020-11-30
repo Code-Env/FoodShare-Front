@@ -1,5 +1,8 @@
 import React, { useState } from "react";
+
 import { Link } from "react-router-dom";
+import { IconContext } from "react-icons";
+import { HiMenu } from "react-icons/hi";
 
 const NavMenu = () => {
   const [nav, setNav] = useState(false);
@@ -27,9 +30,11 @@ const NavMenu = () => {
           </div>
         </div>
       )}
-      <span className="navOpenBtn" onClick={openNav}>
-        &#9776;
-      </span>
+      <div onClick={openNav}>
+        <IconContext.Provider value={{ className: "navOpenBtn" }}>
+          <HiMenu />
+        </IconContext.Provider>
+      </div>
     </>
   );
 };
