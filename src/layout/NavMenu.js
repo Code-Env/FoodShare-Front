@@ -23,10 +23,12 @@ const NavMenu = () => {
             &times;
           </span>
           <div className="overlay-content">
-            <Link to="/">About</Link>
-            <Link to="/">Services</Link>
-            <Link to="/">Clients</Link>
-            <Link to="/">Contact</Link>
+            <Link to="/">마이페이지</Link>
+            <Link to="/">관심 목록</Link>
+            <Link to="/">구매 내역</Link>
+            <Link to="/">글쓰기 목록</Link>
+            <Link to="/">채팅 목록</Link>
+            <Link to="/">공지사항</Link>
           </div>
         </div>
       )}
