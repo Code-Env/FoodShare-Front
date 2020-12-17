@@ -33,8 +33,8 @@ const MainPageContainer = () => {
   if (!productList) return null;
   return (
     <MainPageComponent>
-      {productList.map(product => (
-        <Link to="/product">
+      {productList.map((product, index) => (
+        <Link to="/product" key={product._id}>
           <ProductItem
             key={product._id}
             productName={product.productName}
