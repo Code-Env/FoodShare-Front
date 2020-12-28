@@ -14,6 +14,7 @@ const ProductInfoComponent = ({ favouriteCount, heart, favourite }) => {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
+    arrows: false,
   };
   return (
     <div className="productInfoContainer">
