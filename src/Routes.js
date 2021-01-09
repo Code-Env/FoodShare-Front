@@ -6,6 +6,7 @@ import Main from "pages/Main";
 import ProductInfo from "pages/ProductInfo";
 import ChattingList from "pages/ChattingList";
 import Login from "pages/Login";
+import Signup from "pages/Signup";
 
 const Routes = () => {
   return (
@@ -17,6 +18,7 @@ const Routes = () => {
         <Route path="/product/" component={ProductInfo} />
         <Route path="/chattinglist" component={ChattingList} />
         <Route path="/login" component={Login} />
+        <Route path="/signup" component={Signup} />
       </Switch>
       {/* </HashRouter> */}
     </>
