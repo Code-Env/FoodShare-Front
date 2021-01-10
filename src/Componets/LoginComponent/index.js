@@ -1,12 +1,16 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+import logo from "assets/FoodShare.png";
+
 const LoginComponent = () => {
   return (
     <div className="loginPage">
       <div className="loginLogo">
         <div className="logo">
-          <Link to="/">로고</Link>
+          <Link to="/">
+            <img src={logo} alt="logo" width="80px" height="80px" />
+          </Link>
         </div>
       </div>
       <div className="loginForm">
