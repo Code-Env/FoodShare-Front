@@ -2,6 +2,9 @@
   text-align: center;
   height: 150px;
 }
+.loginPage .logo a {
+  color: black;
+}
 .loginPage .loginForm,
 .loginPage .loginLogo {
   padding: 0 20px;
