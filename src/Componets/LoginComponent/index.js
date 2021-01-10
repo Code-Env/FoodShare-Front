@@ -1,10 +1,13 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const LoginComponent = () => {
   return (
     <div className="loginPage">
       <div className="loginLogo">
-        <div className="logo">로고</div>
+        <div className="logo">
+          <Link to="/">로고</Link>
+        </div>
       </div>
       <div className="loginForm">
         <div className="idBox">
