@@ -15,7 +15,6 @@ const ProductInfoContainer = ({ history, location, match }) => {
     }
     setHeart(!heart);
   };
-  console.log(location.state.productImg);
   return (
     <ProductInfoComponent
       favouriteCount={favouriteCount}
