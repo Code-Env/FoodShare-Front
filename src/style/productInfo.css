@@ -5,11 +5,10 @@
   height: 195px;
   background-color: #7f7f7f;
 }
-.productInfoContainer .slide .slider_content:nth-child(1) {
-  background-image: url("https://post-phinf.pstatic.net/MjAxNzA3MTBfMjQ0/MDAxNDk5NjUxNTc0MTc2.K5rY_jq1hALrveBIGm8JWo12zv5oN_O6DXmN4mVNMRMg.xapkNOB7HzsDjcosm42LsH_vg5-Q8nz5WOU1HHX1CzQg.JPEG/%EC%98%81%EC%A7%84%EC%9C%845.jpg?type=w1200");
+/* .productInfoContainer .slide .slider_content:nth-child(1) {
   background-size: cover;
   background-repeat: no-repeat;
-}
+} */
 .productInfoContainer .slide .slick-dots {
   bottom: 10px;
 }
