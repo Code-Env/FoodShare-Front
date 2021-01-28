@@ -7,12 +7,10 @@ import { HiMenu } from "react-icons/hi";
 const NavMenu = () => {
   const [nav, setNav] = useState(false);
   const closeNav = () => {
-    console.log("close");
     setNav(!nav);
   };
   const openNav = () => {
     setNav(!nav);
-    console.log("true");
   };
 
   return (
