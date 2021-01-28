@@ -15,8 +15,7 @@ const Routes = () => {
       {/* github pages에서 spa지원을위해 <HashRouter basename="/"> 사용 */}
       <Switch>
         <Route exact path="/" component={Main} />
-        <Route path="/product/" component={ProductInfo} />
-        <Route path="/product/:userid" component={ProductInfo} />
+        <Route path="/product/:id" component={ProductInfo} />
         <Route path="/chattinglist" component={ChattingList} />
         <Route path="/login" component={Login} />
         <Route path="/signup" component={Signup} />

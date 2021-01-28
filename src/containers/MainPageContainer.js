@@ -34,7 +34,22 @@ const MainPageContainer = () => {
   return (
     <MainPageComponent>
       {productList.map((product, index) => (
-        <Link to="/product" key={product._id}>
+        // <Link to={`/product/${product._id}`} key={product._id}>
+        <Link
+          to={{
+            pathname: `/product/${product._id}`,
+            state: {
+              productName: product.productName,
+              category: product.category,
+              productImg: product.productImg,
+              position: product.position,
+              userId: product.userId,
+              hitCount: product.hitCount,
+              favouriteCount: product.favouriteCount,
+            },
+          }}
+          key={product._id}
+        >
           <ProductItem
             key={product._id}
             productName={product.productName}

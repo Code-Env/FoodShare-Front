@@ -5,7 +5,17 @@ import { BsHeartFill } from "react-icons/bs";
 import UserInfo from "shared/UserInfo";
 import Slider from "react-slick";
 
-const ProductInfoComponent = ({ favouriteCount, heart, favourite }) => {
+const ProductInfoComponent = ({
+  favouriteCount,
+  heart,
+  favourite,
+  productName,
+  category,
+  productImg,
+  position,
+  userId,
+  hitCount,
+}) => {
   const settings = {
     dots: true,
     infinite: true,
@@ -20,17 +30,19 @@ const ProductInfoComponent = ({ favouriteCount, heart, favourite }) => {
     <div className="productInfoContainer">
       <div className="slide">
         <Slider {...settings}>
+          <div className="slider_content">
+            <img src={productImg} alt="productImg" width="100%" height="100%" />
+          </div>
+          {/* <div className="slider_content"></div>
           <div className="slider_content"></div>
-          <div className="slider_content"></div>
-          <div className="slider_content"></div>
-          <div className="slider_content"></div>
+          <div className="slider_content"></div> */}
         </Slider>
       </div>
-      <UserInfo />
+      <UserInfo position={position} userId={userId} />
       <div className="contentBox">
-        <div className="contentBoxTitle">거래하실분 괌 ...</div>
+        <div className="contentBoxTitle">{productName}</div>
         <div className="contentBoxCondition">
-          <div className="contentBoxCategory">식자제</div>
+          <div className="contentBoxCategory">{category}</div>
           <div className="contentBoxAgoTime">1분전</div>
           <div className="contentBoxFavourite">
             <span>관심</span>
@@ -38,7 +50,7 @@ const ProductInfoComponent = ({ favouriteCount, heart, favourite }) => {
           </div>
           <div className="contentBoxHit">
             <span>조회</span>
-            <span>100</span>
+            <span>{hitCount}</span>
           </div>
         </div>
       </div>

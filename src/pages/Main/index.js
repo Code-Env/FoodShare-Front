@@ -3,8 +3,8 @@ import Layout from "layout/Layout";
 import MainPageContainer from "containers/MainPageContainer";
 
 const Main = props => {
-  const { history, location, match } = props;
-  const { userId } = match.params;
+  const { history, location } = props;
+  // const { userId } = match.params;
   // const userItam = productList[userId];
   return (
     <Layout history={history} location={location}>
